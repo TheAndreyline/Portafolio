@@ -20,46 +20,7 @@
             <img src="img/image.png" alt="Mi Imagen">
         </div>
 
-        <style>
-            div.at-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-            }
 
-            .at-item {
-                color: #ed30be;
-                font-weight: bold;
-                font-size: 3em;
-
-                animation-name: focus-in-contract;
-                animation-duration: 5s;
-                animation-timing-function: linear;
-                animation-delay: 0s;
-                animation-iteration-count: 1;
-                animation-direction: normal;
-                animation-fill-mode: none;
-
-                /* shorthand
-            animation: focus-in-contract 1s linear 0s 1 normal none;*/
-            }
-
-
-            @keyframes focus-in-contract {
-
-                0% {
-                    letter-spacing: 1em;
-                    filter: blur(12px);
-                    opacity: 0;
-                }
-
-                100% {
-                    filter: blur(0);
-                    opacity: 1;
-                }
-            }
-        </style>
         <div class='at-container'>
             <div class='at-item'>ANDREY DEV</div>
         </div>
@@ -200,23 +161,26 @@
                 <a data-modal-id="message"><img src="./img/message.svg" alt=""></a>
             </div>
         </div>
-        <div class="contactex">
-            <div>
-                <h3 class="contact__title">Teléfono</h3>
-                <span class="contact__subtitle">(+57)320 958 53 28</span>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">senaandrey1224@gamil.com</span>
-            </div>
-            <div>
-                <h3 class="contact__title">Localizame</h3>
-                <span class="contact__subtitle">Colombia-Málaga</span>
-            </div>
-        </div>
-
+       
     </section>
+
+    <div class="contacto">
+        <div class="contacto-info">
+            <h3 class="contact__title">Teléfono</h3>
+            <p class="contact__subtitle">(+57)320 958 53 28</p>
+        </div>
+        <div class="contacto-info">
+            <h3 class="contact__title">Email</h3>
+            <p class="contact__subtitle">senaandrey1224@gamil.com</p>
+        </div>
+        <div class="contacto-info">
+            <h3 class="contact__title">Localizame</h3>
+            <p class="contact__subtitle">Colombia-Málaga</p>
+        </div>
+    </div>
+
+    
+
 
     <footer>
         <p>ⓒ 2023 Derechos reservados | Designed by Andrey Dev</p>

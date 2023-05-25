@@ -21,6 +21,45 @@ header {
     padding: 5px 0;
 }
 
+div.at-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.at-item {
+    color: #ed30be;
+    font-weight: bold;
+    font-size: 3em;
+
+    animation-name: focus-in-contract;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    /* shorthand
+animation: focus-in-contract 1s linear 0s 1 normal none;*/
+}
+
+
+@keyframes focus-in-contract {
+
+    0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
 body {
     font-size: 18px;
     font-family: 'Signika', sans-serif;
@@ -29,7 +68,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100vh;
     margin: 0 auto;
     padding-bottom: 0px;
 }
@@ -37,7 +76,6 @@ body {
 .navbar {
     display: flex;
     justify-content: flex-end;
-
 
 }
 
@@ -76,13 +114,6 @@ body {
 span {
     color: var(--primary);
 }
-
-
-
-
-
-
-
 
 
 
@@ -419,8 +450,8 @@ label {
 
 .logox-img img {
     float: left;
-    width: 202px;
-    height: 90px;
+    width: 250px;
+    height: 70px;
     border-bottom: 50%;
     border-bottom: 25%;
 
@@ -429,7 +460,7 @@ label {
 .logoxy-img img {
     float: center;
     width: 202px;
-    height: 50px;
+    height: 20px;
     border-bottom: 50%;
     border-bottom: 25%;
 }
@@ -456,29 +487,85 @@ label {
     font-family: 'Times New Roman';
 }
 
-.contactex {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 1300px;
-    align-items: center;
-    margin-left: 410px;
-
-}
+.contacto {
+    display: flex;
+    flex-wrap: wrap;   
+    background-color: #000000;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+    }
 
 @media screen and (max-width:600px) {
-    .contactex {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 500px;
-        align-items: center;
-        margin-left: 5px;
-
-
+    .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
     }
+
+    .contacto-info{
+        flex-grow:1;
+    }
+
 }
 
 .frase {
     text-align: center;
     font-size: 2rem;
     font-family: 'Times New Roman'
+}
+@media screen and (max-width:768px) {
+  
+
+    
+    
+    
+    .at-item {
+        font-family: 'Times New Roman';
+        font-size: 1.5rem;
+        
+    }
+    .at-item {
+        color: #ed30be;
+        font-weight: bold;
+        font-size: 1em;
+
+        animation-name: focus-in-contract;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        
+}
+
+.logox-img{
+    display: none;
+}
+}
+   
+
+
+@media screen and (max-width:920px) {
+    .contacto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    background-color: #000000;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+    .contacto-info{
+        flex-grow:1;
+    }
+    
+    
 }
