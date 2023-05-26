@@ -467,7 +467,6 @@ label {
 
 
 
-
 .logox-img img {
     transform: scale(0);
     animation: zoomAnimation 5s forwards;
@@ -494,6 +493,7 @@ label {
     height: 100%;
     padding: 15px;
     gap: 5px;
+    justify-content: space-evenly;
     }
 
 @media screen and (max-width:600px) {
